@@ -30,14 +30,7 @@ contract ProofVerifier is EssentialContract, IProofVerifier {
         EssentialContract._init(_addressManager);
     }
 
-    /**
-     * @notice Verifies the provided proofs.
-     * @dev Throws an error if verification fails.
-     *
-     * @param blockProofs Raw bytes of proof(s).
-     * @param instance Hashed evidence & config data. If set to zero, proof is
-     * assumed to be from oracle/system prover.
-     */
+    /// @inheritdoc IProofVerifier
     function verifyProofs(
         uint256, /*blockId*/
         bytes calldata blockProofs,
