@@ -264,6 +264,7 @@ contract TaikoL1ProverPool is TaikoL1TestBase {
         }
         printVariables("");
     }
+    // TODO(docs)
 
     function test_asigned_prover_distribution_if_only_have_1_prover()
         external
