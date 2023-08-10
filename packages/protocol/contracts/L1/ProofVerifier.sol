@@ -14,8 +14,8 @@ import { IProofVerifier } from "./IProofVerifier.sol";
 import { LibBytesUtils } from "../thirdparty/LibBytesUtils.sol";
 
 /**
+ * See the documentation in {IProofVerifier}
  * @title ProofVerifier
- * @dev Contract for verifying proofs in the rollup.
  */
 contract ProofVerifier is EssentialContract, IProofVerifier {
     uint256[50] private __gap;
@@ -23,7 +23,7 @@ contract ProofVerifier is EssentialContract, IProofVerifier {
     error L1_INVALID_PROOF();
 
     /**
-     * @notice Initializes the contract with the provided address manager.
+     * Initializes the contract with the provided address manager.
      * @param _addressManager The address of the address manager contract.
      */
     function init(address _addressManager) external initializer {
@@ -32,7 +32,7 @@ contract ProofVerifier is EssentialContract, IProofVerifier {
 
     /// @inheritdoc IProofVerifier
     function verifyProofs(
-        uint256, /*blockId*/
+        uint256, /*blockId*/ // TODO(docs)
         bytes calldata blockProofs,
         bytes32 instance
     )
@@ -73,7 +73,7 @@ contract ProofVerifier is EssentialContract, IProofVerifier {
 }
 
 /**
+ * Proxied version of the ProofVerifier contract.
  * @title ProxiedProofVerifier
- * @dev Proxied version of the ProofVerifier contract.
  */
 contract ProxiedProofVerifier is Proxied, ProofVerifier { }
