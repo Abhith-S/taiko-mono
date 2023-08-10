@@ -32,7 +32,9 @@ contract ProofVerifier is EssentialContract, IProofVerifier {
 
     /// @inheritdoc IProofVerifier
     function verifyProofs(
-        uint256, /*blockId*/ // TODO(docs)
+        // blockId is unused now, but can be used later when supporting
+        // different types of proofs.
+        uint256,
         bytes calldata blockProofs,
         bytes32 instance
     )
