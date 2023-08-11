@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.10.0](https://github.com/taikoxyz/taiko-mono/compare/bridge-ui-v0.9.1...bridge-ui-v0.10.0) (2023-08-11)
+
+
+### Features
+
+* **protocol:** alpha-4 with staking-based tokenomics ([#14065](https://github.com/taikoxyz/taiko-mono/issues/14065)) ([1eeba9d](https://github.com/taikoxyz/taiko-mono/commit/1eeba9d97ed8e6e4a8d07a8b0af163a16fbc9ccf))
+
+
+### Bug Fixes
+
+* **pos-dashboard:** Staking dashboard bug fixes ([#14447](https://github.com/taikoxyz/taiko-mono/issues/14447)) ([fd54f13](https://github.com/taikoxyz/taiko-mono/commit/fd54f13c19e59d9fbbab84fc85d8519eab51f623))
+
 ## [0.9.1](https://github.com/taikoxyz/taiko-mono/compare/bridge-ui-v0.9.0...bridge-ui-v0.9.1) (2023-07-10)
 
 
