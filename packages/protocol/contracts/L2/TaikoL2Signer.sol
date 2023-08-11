@@ -45,7 +45,6 @@ abstract contract TaikoL2Signer {
         0x71620584f61c57e688bbd3fd7a39a036e588d962c4c830f3dacbc15c917e02f2;
 
     // Invert K (= 2) in the field F(N)
-    // TODO(docs): what is K (= 2)?
     uint256 private constant K_2_INVM_N =
         0x7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a1;
 
